@@ -1,0 +1,18 @@
+[package]
+name = "rustrays"
+version = "0.1.0"
+authors = ["Branimir "]
+
+[[bin]]
+name = "rustrays"
+path = "src/rustrays.rs"
+
+[dependencies]
+rustc-serialize = "*"
+getopts = "0.2"
+rand = "0.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+
